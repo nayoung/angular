@@ -8,13 +8,4 @@ My Heroes
   </li>
 </ul>
 
-<!--detail view-->
-<div *ngIf="selectedHero != undefined">
-  <p>{{selectedHero.name}}</p>
-  <p>{{selectedHero.id}}</p>
-  <div>
-    <label for="">: name
-     <input type="text" [(ngModel)]="selectedHero.name">
-    </label>
-  </div>
-</div>
+<app-hero-detail [Hero]="selectedHero"></app-hero-detail>

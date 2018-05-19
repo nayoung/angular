@@ -1,3 +1,10 @@
-<p>
-  hero-detail works!
-</p>
+<!--detail view-->
+<div *ngIf="Hero != undefined">
+  <p>{{Hero.name}}</p>
+  <p>{{Hero.id}}</p>
+  <div>
+    <label for="">: name
+      <input type="text" [(ngModel)]="Hero.name">
+    </label>
+  </div>
+</div>
