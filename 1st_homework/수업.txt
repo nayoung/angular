@@ -1,0 +1,114 @@
+
+
+## 수업내용
+
+1주차 강의 자료입니다.
+
+1주차 git은
+
+git clone https://github.com/eastflag/toh
+
+1주차는 tour of heroes 를 하면서 angular 아키텍처를 오버뷰 해보는 시간입니다.
+
+ppt에 아키텍처에 대한 내용을 요약해서 정리해놓았습니다.
+
+소스를 원하신다면 tour of heroes의 원 저자인 존파파의 아래 git 을 clone해보세요.
+
+git clone https://github.com/johnpapa/angular-tour-of-heroes
+Drop here!
+
+
+2주 ~ 4주차에 진행할 데모사이트의
+화면정의서와 REST api 규격서입니다.
+
+* 구현한 데모 사이트
+- 사용자 사이트
+http://www.javabrain.kr:3000
+
+- 관리자 사이트
+http://www.javabrain.kr:3000/admin
+
+
+==================================================================================
+
+0. nodejs설치 > git설치 > 웹스톰 설치 > 앵귤러 설치
+*NodeJS 설치 https://nodejs.org/ko/download/ node ?v 로 버전 확인
+
+*Git 설치 https://git-scm.com/ git ?version 으로 확인
+
+*개발툴 설치 웹스톰 설치 https://www.jetbrains.com/webstorm/?fromMenu
+웹스톰 인증 http://edu.javabrain.kr:8750
+
+*Angular 환경 설정 http://angular.io 참고 npm install -g @angular/cle  (  npm update -g @angular/cli)
+ng --version
+
+1. c\mia 에서 toh라는 앵귤러 생성
+
+cd /
+mkdir mia
+cd mia
+ng new toh
+
+2. index.html > 터미널실행
+ng serve --open --port 4200
+
+* webstorm 단축키
+ctrl + b 해당함수 trace
+
+
+* es5->es6
+require('xxx') -> import
+export('xxx') -> export  다른사람이 사용가능하도록~~
+
+
+* es5->es6 -> typescrtip
+var id; -> id; -> id:number;
+
+* ts-> html => componet 반영, 2-way  binding: ngZone
+() : html->ts 반영
+[] : ts->html 반영
+
+[(ngModel)] : html->ts->html
+*ngFor => *은 DOM이 변경된다는 의미
+
+
+* es5 반복문
+for (key in 객체) {}
+for (index in 배열) {}
+* es6 반복문
+let 아이템 of 컬랙션
+let val of 배열
+
+*npm install --save [A]
+-> package.json 에 형상관리하기위해
+npm install [A]
+-> 형상관리 하지 않음
+
+npm install 하게되면 package.json를 비교해서 설치하게 된다.
+
+
+* angular 은 webpack를 기반으로 하기에 scss 를 따로 하지 않아도 자동으로 해준다.
+
+
+테스트가능
+https://liveweave.com/
+
+
+* 클래스 바인딩
+[class.A] = "조건문"
+[class.select] = "true"
+<li class="select"> 클래스 추가 처리됨
+
+
+
+
+
+
+
+
+
+
+
+
+
+
