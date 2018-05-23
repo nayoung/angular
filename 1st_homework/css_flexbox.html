@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>form validation</title>
+  <style>
+    .inner {
+      width: 100%;
+      height: 100%;
+      border: 1px solid blue;
+      display: flex;
+    }
+    .inner:first-child {
+      justify-content: space-between;
+    }
+    .inner:last-child {
+      justify-content: space-between;
+      flex-direction:column;
+    }
+    .inner:last-child .outer:nth-child(2){
+      align-self: center;
+    }
+    .inner:last-child .outer:last-child{
+      align-self: flex-end;
+    }
+    .outer {
+      width: 100px;
+      height: 100px;
+      background: red;
+    }
+  </style>
+</head>
+<body>
+<div class="inner">
+  <div class="outer"></div>
+  <div class="outer"></div>
+  <div class="outer"></div>
+</div>
+<div class="inner">
+  <div class="outer"></div>
+  <div class="outer"></div>
+  <div class="outer"></div>
+</div>
+</body>
+</html>

@@ -14,30 +14,45 @@ var books = [
   {title: "자바의정석", price: 35000, author: "정석", order: 3},
   {title: "안드로이드정복", price: 15000, author: "김상형", order: 4},
 ];
+console.log('1. -----------------------------------------------------');
+console.log(books);
 
 // 2. books의 type은 무엇인가? 자바스크립트의 타입은 몇가지가 있는가?
-console.log(typeof books);
+console.log('2. -----------------------------------------------------');
+console.log('books의 type : ' + typeof books);
 
+let javascriptType = [typeof "john", typeof 3, typeof false, typeof {name:'john', age:34}, typeof function () {}, typeof myCar];
+let javascriptTypeCnt = 0;
+let javascriptTypeStr = javascriptType.join(',');
+for (let i in javascriptType) {
+  javascriptTypeCnt++;
+}
+console.log('자바스크립트 타입은 ' +  javascriptTypeStr+ '으로  총 ' + javascriptTypeCnt + '건');
 
 //3. 맨 앞쪽에 이것이자바다, 40000, 김상형, 5를 추가하시오 (힌트: unshift)
+console.log('3. -----------------------------------------------------');
 books.unshift({title: "이것이자바다", price: 40000, author: "김상형", order: 5});
 console.log(books);
 //4. 맨 앞쪽에 추가한것을 지우시오,
+console.log('4. -----------------------------------------------------');
 books.shift();
 console.log(books);
 
 // 5. 맨 뒷쪽에 추가하시오. (힌트: push)
+console.log('5. -----------------------------------------------------');
 books.push({title: "이것이자바다", price: 40000, author: "김상형", order: 5});
 console.log(books);
 // 6. 맨 뒤쪽에 추가한것을 지우시오,
+console.log('6. -----------------------------------------------------');
 books.pop();
 console.log(books);
 
-
 // 7. 흥부놀부와 자바의정석 사이에 삽입하시오. (힌트: splice)
+console.log('7. -----------------------------------------------------');
 books.splice(2, 0, {title: "이것이자바다", price: 40000, author: "김상형", order: 5});
 console.log(books);
 // 8. 방금 삽입한거를 삭제하시오.
+console.log('8. -----------------------------------------------------');
 books.splice(2, 1);
 console.log(books);
 
