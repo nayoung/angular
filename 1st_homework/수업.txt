@@ -39,7 +39,7 @@ http://www.javabrain.kr:3000/admin
 *개발툴 설치 웹스톰 설치 https://www.jetbrains.com/webstorm/?fromMenu
 웹스톰 인증 http://edu.javabrain.kr:8750
 
-*Angular 환경 설정 http://angular.io 참고 npm install -g @angular/cle  (  npm update -g @angular/cli)
+*Angular 환경 설정 http://angular.io 참고 npm install -g @angular/cli (  npm update -g @angular/cli)
 ng --version
 
 1. c\mia 에서 toh라는 앵귤러 생성
