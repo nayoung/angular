@@ -3,9 +3,12 @@ My Heroes
 </p>
 
 <ul class="heroes">
-  <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero===selectedHero">
+  <li *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
+
+  <!--li *ngFor="let hero of heroes" (click)="onSelect(hero)"
+   [class.selected]="hero===selectedHero"-->
     <span class="badge">{{hero.id}}</span>{{hero.name}}
   </li>
 </ul>
-
-<app-hero-detail [Hero]="selectedHero"></app-hero-detail>
+<!-- 클릭시 자식이 아니라 라우팅화면으로 이동 -->
+<!--app-hero-detail [Hero]="selectedHero"></app-hero-detail-->
