@@ -45,3 +45,9 @@ tempBook과 book의 메모리주소가 다름
 routerLink = herf 역확을 함
 
 routerLinkActive 해당 라우팅이 됐을떄 class처리됨
+
+
+* es6 템플릿스트링
+console.log('string text');
+-> console.log(`string ${text}`);
+text 변수가 들어감 백틱, ${변수}

@@ -21,6 +21,7 @@ export class HeroService {
   // id에 해당하는 Hero객체 추출
   getHero(id: number): Observable<Hero> {
     const hero = HEROES.find(item => item.id === id);
+    this.messageService.add(`Hero ${id} is fetched!!`);
     return of(hero);
   }
 }

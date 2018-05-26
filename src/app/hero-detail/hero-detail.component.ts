@@ -20,7 +20,7 @@ export class HeroDetailComponent implements OnInit {
     // detail/:id url에서 id값 추출
     this.route.params
       .subscribe(params => {
-        console.log(params);
+        //console.log(params);
         const id = +params['id'];  // string을 number로 변환
         // 서비스에서 id에 해당하는 Hero 모델 추출
         this.getHero(id);
