@@ -36,3 +36,7 @@ message - 부모 & 자식간의 servcie 처리
 app.module.ts에서 라우팅처리됨
 
 
+  <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+routerLink = herf 역확을 함
+
+routerLinkActive 해당 라우팅이 됐을떄 class처리됨
